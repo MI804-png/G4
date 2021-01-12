@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+
+    <div class="background">
+<div class="container">
+<ul style="list-style: none;">
+<li id="home">Home</li>
+<li>About</li>
+<li>projects</li>
+<li>contacts</li>
+</ul>
+
+</div>
+    </div>
+    <div id="map"></div>
+    
+
+    <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzIhWNPquL9W3MgsAsciZ77aguLEtz6FA&callback=myMap"></script>
+        <script async defer src="https://googleapis.com/maps/api/js?key=AIzaSyCzIhWNPquL9W3MgsAsciZ77aguLEtz6FA&callback=initMap"></script>
+
+</body>
+<script src="js.js"></script>
+
+</html>
